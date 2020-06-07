@@ -1,6 +1,27 @@
 # ComplSeq Utils
 
 ### Description
+Utility to determine complementary subsequences contained into a main sequence.
+
+For example:
+* input RNA sequence: `AUGCCGAUUGCAUUUCAUACGGC`
+* subsequence length: `5`
+* output:
+```text
+Subsequence: CGAUU
+Positions: 5-9
+Set of complementary sequences: AGUUG, AGUCG, AAUUG, AAUCG, GGUUG, GGUCG, GAUUG, GAUCG
+Complementary: GAUUG
+Locations: 6-10
+
+Subsequence: GAUUG
+Positions: 6-10
+Set of complementary sequences: CGGUU, CGGUC, CGAUU, CGAUC, CAGUU, CAGUC, CAAUU, CAAUC, UGGUU, UGGUC, UGAUU, UGAUC, UAGUU, UAGUC, UAAUU, UAAUC
+Complementary: CGAUU
+Locations: 5-9
+```
+
+**NOTE**: the output may contains complementary subsequences that overlap (see the example above).
 
 
 ### Usage
